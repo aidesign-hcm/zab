@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="">
+
+  <title>Zap.city</title>
+  <meta name="description" content="Zap.city" />
+  <meta name="keywords" content="Zap.city">
+  <link rel="canonical" href="#" />
+
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+
+  <!-- jQuery 1.8 or later, 33 KB -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Fotorama from CDNJS, 19 KB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=5e718e905039a80012d346af&product=inline-share-buttons"
+    async="async"></script>
+  <script src="https://cdn.tiny.cloud/1/oiisnkuw3jgbi0cd4h8mtils5e4dplryjc36256079z3lux6/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+  <header>
+    <div id="navbar-top-main" class="navbar-top  navbar-dark bg-primary">
+      <div class="container px-0">
+        <div class="navbar-nav ">
+          <div>
+            <ul class="nav">
+              <li class="nav-item ml-lg-2">
+                <a class="nav-link px-0" href="#">
+                  <span class="d-none d-lg-inline-block">Blog</span>
+                </a>
+              </li>
+              <li class="nav-item ml-lg-2">
+                <a class="nav-link px-0" href="#">
+                  <span class="d-none d-lg-inline-block">Sản phẩm</span>
+                </a>
+              </li>
+              <li class="nav-item ml-lg-2">
+                <a class="nav-link px-0" href="#">
+                  <span class="d-none d-lg-inline-block">Liên hệ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand navbar-light bd-navbar border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/site/logo.png" alt="zap.city" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+          aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="input-group-overlay d-none d-lg-flex mx-4">
+          <form class="form-inline my-2 my-md-0 d-lg-flex input-group-overlay ">
+            <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm sản phẩm">
+            <div class="input-group-append-overlay"><span class="input-group-text">
+                <i data-feather="search"></i></span></div>
+          </form>
+        </div>
+
+        <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+          <div class="show-mobile">
+            <div class="d-flex">
+              <a href="#" data-toggle="modal" data-target="#searchModal">
+                <i data-feather="search"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Search popup -->
+          <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModallLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content search-popup">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <form class="form-inline my-2 my-md-0 d-lg-flex d-md-flex input-group-overlay py-4">
+                  <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm sản phẩm">
+                  <div class="input-group-append-overlay"><span class="input-group-text">
+                      <i data-feather="search"></i></span></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a href="add-post.html" class="">
+            <div class="navbar-tool-text ml-n3">
+              <i data-feather="plus-circle"></i> Viết bài
+            </div>
+          </a>
+          <div class="dropdown navbar-tool ml-3 ml-lg-0 mr-n1 mr-lg-2">
+            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button> -->
+            <div class="navbar-tool-icon-box" data-toggle="dropdown">
+              <i data-feather="user"></i>
+            </div>
+            <div class="navbar-tool-text ml-n3" data-toggle="dropdown">Chào, Admin</div>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="profile.html"><i data-feather="more-vertical" class="mr-2"></i>Tài
+                Khoản</a>
+              <a class="dropdown-item" href="#"><i data-feather="pie-chart" class="mr-2"></i>Thu Nhập</a>
+              <a class="dropdown-item" href="#"><i data-feather="credit-card" class="mr-2"></i>Thanh toán</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="product-active-done.html">
+                <li data-feather="box" class="mr-2"></li>Sản phẩm đã mua
+              </a>
+              <a class="dropdown-item" href="active.html">
+                <li data-feather="check-square" class="mr-2"></li>Kích hoạt
+              </a>
+              <a class="dropdown-item" href="#">
+                <li data-feather="log-out" class="mr-2"></li>Đăng xuất
+              </a>
+            </div>
+          </div>
+
+
+          <div class="dropdown navbar-tool ml-3">
+            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button> -->
+            <a class="navbar-tool-icon-box bg-secondary dropdown-toggle" data-toggle="dropdown">
+              <span class="navbar-tool-label">4</span><i data-feather="shopping-bag"></i>
+            </a>
+            <a class="navbar-tool-text" data-toggle="dropdown"><small>Giỏ hàng</small>1.400.00 đ</a>
+            <div class="dropdown-menu dropdown-menu-right" style="width: 20rem;">
+              <div class="widget widget-cart px-3 nav-item pt-2 pb-3">
+                <div style="height: 15rem;" data-simplebar="init" data-simplebar-auto-hide="false">
+                  <div class="simplebar-wrapper" style="margin: 0px -16px 0px 0px;">
+                    <div class="simplebar-height-auto-observer-wrapper">
+                      <div class="simplebar-height-auto-observer"></div>
+                    </div>
+                    <div class="simplebar-mask">
+                      <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                        <div class="simplebar-content-wrapper"
+                          style="height: auto; padding-right: 0px; padding-bottom: 0px; overflow: hidden;">
+                          <div class="simplebar-content" style="padding: 0px 16px 0px 0px;">
+                            <div class="widget-cart-item pb-2 border-bottom">
+                              <button class="close text-danger" type="button" aria-label="Xóa"><span
+                                  aria-hidden="true">×</span></button>
+                              <div class="media align-items-center"><a class="d-block mr-2" href="#"><img width="64"
+                                    src="./images/cart/01.jpg" alt="Product"></a>
+                                <div class="media-body">
+                                  <h6 class="widget-product-title"><a href="#">Women Colorblock Sneakers</a></h6>
+                                  <div class="widget-product-meta"><span
+                                      class="text-accent mr-2">$150.<small>00</small></span><span class="text-muted">x
+                                      1</span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="widget-cart-item py-2 border-bottom">
+                              <button class="close text-danger" type="button" aria-label="Xóa"><span
+                                  aria-hidden="true">×</span></button>
+                              <div class="media align-items-center"><a class="d-block mr-2" href="#"><img width="64"
+                                    src="./images/cart/02.jpg" alt="Product"></a>
+                                <div class="media-body">
+                                  <h6 class="widget-product-title"><a href="#">TH Jeans City Backpack</a></h6>
+                                  <div class="widget-product-meta"><span
+                                      class="text-accent mr-2">$79.<small>50</small></span><span class="text-muted">x
+                                      1</span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="widget-cart-item py-2 border-bottom">
+                              <button class="close text-danger" type="button" aria-label="Xóa"><span
+                                  aria-hidden="true">×</span></button>
+                              <div class="media align-items-center"><a class="d-block mr-2" href="#"><img width="64"
+                                    src="./images/cart/03.jpg" alt="Product"></a>
+                                <div class="media-body">
+                                  <h6 class="widget-product-title"><a href="#">3-Color Sun Stash Hat</a></h6>
+                                  <div class="widget-product-meta"><span
+                                      class="text-accent mr-2">$22.<small>50</small></span><span class="text-muted">x
+                                      1</span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="widget-cart-item py-2 border-bottom">
+                              <button class="close text-danger" type="button" aria-label="Xóa"><span
+                                  aria-hidden="true">×</span></button>
+                              <div class="media align-items-center"><a class="d-block mr-2" href="#"><img width="64"
+                                    src="./images/cart/04.jpg" alt="Product"></a>
+                                <div class="media-body">
+                                  <h6 class="widget-product-title"><a href="#">Cotton Polo Regular Fit</a></h6>
+                                  <div class="widget-product-meta"><span
+                                      class="text-accent mr-2">$9.<small>00</small></span><span class="text-muted">x
+                                      1</span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div>
+                  </div>
+
+                </div>
+                <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                  <div class="font-size-sm mr-2 py-2"><span class="text-muted">Subtotal:</span><span
+                      class="text-accent font-size-base ml-1">$265.<small>00</small></span></div><a
+                    class="btn btn-outline-secondary btn-sm" href="order.html">Xem giỏ hàng<i
+                      class="fa fa-angle-right ml-2" aria-hidden="true"></i></a>
+                </div><a class="btn btn-purple btn-sm btn-block" href="checkout.html"><i data-feather="credit-card"
+                    class="mr-2"></i>Thanh toán</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="box-shadow-lg navbar-expand py-2">
+      <div class="container">
+        <nav class="scroll  justify-content-between navbar-nav">
+
+          <a href="#" class="pr-3 nav-item nav-item dropdown" data-id="sub">Dropdown menu <i data-feather="chevron-down"
+              class=""></i></a>
+          
+          <a href="#" class="px-3 nav-item nav-item dropdown" data-id="sub-two">Dropdown menu two<i
+              data-feather="chevron-down" class=""></i></a>
+          <a class="pr-3" href="categories.html">Danh mục sản phẩm</a>
+          <a class="px-3 nav-item" href="search-page.html">Tìm kiếm</a>
+          <a class="px-3 nav-item" href="add-product.html">Thêm sản phẩm</a>
+          <a class="px-3 nav-item" href="#">Trang Bài viết</a>
+          <a class="px-3 nav-item" href="product-single.html">Trang sản phẩm</a>
+          <a class="px-3 nav-item" href="#">Politics</a>
+          <a class="px-3 nav-item" href="#">Opinion</a>
+          <a class="px-3 nav-item" href="#">Science</a>
+          <a class="px-3 nav-item" href="#">Health</a>
+          <a class="px-3 nav-item" href="#">Style</a>
+          <a class="px-3 nav-item" href="#">Travel</a>
+
+        </nav>
+        <div class="submenu scroll py-1 mt-2" id="sub">
+          <a href="#" class="px-3 nav-item border-right">Sub-one</a>
+          <a href="#" class="px-3 nav-item border-right">Design</a>
+          <a href="#" class="px-3 nav-item border-right">Illustrator</a>
+          <a href="#" class="px-3 nav-item border-right">Photoshop</a>
+          <a href="#" class="px-3 nav-item border-right">Development</a>
+          <a href="#" class="px-3 nav-item border-right">CSS</a>
+          <a href="#" class="px-3 nav-item border-right">JavaScript</a>
+        </div>
+
+        <div class="submenu scroll py-1 mt-2" id="sub-two">
+          <a href="#" class="px-3 nav-item border-right">Sub-two</a>
+          <a href="#" class="px-3 nav-item border-right">Design</a>
+          <a href="#" class="px-3 nav-item border-right">Illustrator</a>
+          <a href="#" class="px-3 nav-item border-right">Photoshop</a>
+          <a href="#" class="px-3 nav-item border-right">Development</a>
+          <a href="#" class="px-3 nav-item border-right">CSS</a>
+          <a href="#" class="px-3 nav-item border-right">JavaScript</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="clearfix"></div>
+
+
+  <main id="page-content" role="main">
+
+    <section class="slice slice-lg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 bg-white box-shadow-lg rounded-lg mt-5 py-4 ">
+            <div class="active-block">
+              <div class="title-block">
+                <h3 class="text-center mb-4">Thêm bài viết mới</h3>
+              </div>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="add-title-blog" class="add-title">Tiêu đề bài viết</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập tiêu đề">
+
+              </div>
+              <div class="form-group">
+                <textarea id="contentBox"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="add-title">Thêm sản phẩm</label>
+              </div>
+              <div class="form-group input-group-overlay ">
+                
+                <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm sản phẩm">
+                <div class="input-group-append-overlay">
+                  <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="products-extra">
+                <div class="form-group card product-card-alt">
+                  <div class="row ">
+                    <div class="col-lg-2">
+                      <a class="product-list-thumb" href="#"><img src="images/01.jpg" alt="Product"></a>
+                    </div>
+                    <div class="col-lg-10">
+                      <p class="product-title font-size-base"><a href="#">Women Colorblock Sneakers</a></p>
+                      <button type="button" class="btn btn-primary mr-4 mb-2"><i
+                        data-feather="shopping-cart" class="mr-2"></i>Thêm sản phẩm</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group card product-card-alt">
+                  <div class="row ">
+                    <div class="col-lg-2">
+                      <a class="product-list-thumb" href="#"><img src="images/01.jpg" alt="Product"></a>
+                    </div>
+                    <div class="col-lg-10">
+                      <p class="product-title font-size-base"><a href="#">Women Colorblock Sneakers</a></p>
+                      <button type="button" class="btn btn-primary mr-4 mb-2"><i
+                        data-feather="shopping-cart" class="mr-2"></i>Thêm sản phẩm</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group card product-card-alt">
+                  <div class="row ">
+                    <div class="col-lg-2">
+                      <a class="product-list-thumb" href="#"><img src="images/01.jpg" alt="Product"></a>
+                    </div>
+                    <div class="col-lg-10">
+                      <p class="product-title font-size-base"><a href="#">Women Colorblock Sneakers</a></p>
+                      <button type="button" class="btn btn-primary mr-4 mb-2"><i
+                        data-feather="shopping-cart" class="mr-2"></i>Thêm sản phẩm</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1" class="add-title">Chọn danh mục</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Dạnh mục 1</option>
+                  <option>Dạnh mục 2</option>
+                  <option>Dạnh mục 3</option>
+                  <option>Dạnh mục 4</option>
+                  <option>Dạnh mục 5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1" class="add-title">Chọn danh sách</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Dạnh sách 1</option>
+                  <option>Dạnh sách 2</option>
+                  <option>Dạnh sách 3</option>
+                  <option>Dạnh sách 4</option>
+                  <option>Dạnh sách 5</option>
+                </select>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-9">
+                  <div class="form-group">
+                    <input type="list-name" class="form-control" id="list-name-item" placeholder="Tên danh sách">
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Thêm mới</button>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="form-group">
+                <label class="add-title">Tags</label>
+                <input type="text" class="form-control" placeholder="mỗi từ khóa cách nhau dấu phẩy">
+              </div>
+              <div class="form-group">
+                <strong>Chú ý</strong>
+                <i>Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A
+                  complete
+                  and customizable solution to building the website of your dreams.</i>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary">Xuất bản</button>
+              </div>
+            </form>
+
+
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="clearfix"></div>
+
+
+    <section class="slice slice-lg">
+      <div class="pt-5 bg-darker">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="card  shadow hover-shadow-lg border-0 position-relative zindex-100">
+              <div class="card-body py-5">
+                <div class="align-items-center">
+                  <div class="mb-4 text-center">
+                    <h2 class=" mt-4">Đăng ký nhận bản tin</h2>
+                    <div class="fluid-paragraph mt-3">
+                      <p class="lead lh-180">Start building fast, beautiful and modern looking websites in no time using
+                        our
+                        theme.</p>
+                    </div>
+                  </div>
+                  <div class="subscribe">
+                    <form class="form" role="form" action="#" method="post">
+                      <div class="row">
+                        <div class="col-sm-9 p1 mb-2">
+                          <div class="form-group">
+                            <label class="sr-only" for="subscribe-email">Email address</label>
+                            <input type="text" name="email" placeholder="Enter your email..."
+                              class="subscribe-email form-control" id="subscribe-email">
+                          </div>
+                        </div>
+                        <div class="col-sm-3 p1 mb-2">
+                          <button type="submit" class="btn btn-primary">Đăng kí</button>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="success-message"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer id="footer-main">
+      <div class="footer footer-dark bg-gradient-primary footer-rotate">
+        <div class="container">
+          <div class="row pt-md">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <a href="index.html">
+                <h3>Zab.city</h3>
+              </a>
+              <p>Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A
+                complete and customizable solution to building the website of your dreams.</p>
+            </div>
+            <div class="col-lg-2 col-4 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+              <h6 class="heading mb-3">Account</h6>
+              <ul class="list-unstyled">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Billing</a></li>
+                <li><a href="#">Notifications</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-4 col-sm-4 mb-5 mb-lg-0">
+              <h6 class="heading mb-3">About</h6>
+              <ul class="list-unstyled text-small">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-4 col-sm-4 mb-5 mb-lg-0">
+              <h6 class="heading mb-3">Company</h6>
+              <ul class="list-unstyled">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
+            <div class="col-md-6">
+              <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                © 2018-2019 zab.city. All
+                rights reserved.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">
+                    <img src="./images/payment/cash.svg" />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">
+                    <img src="./images/payment/internet-banking.svg" />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">
+                    <img src="./images/payment/jcb.svg" />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">
+                    <img src="./images/payment/mastercard.svg" />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">
+                    <img src="./images/payment/visa.svg" />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="hotline-phone-ring-wrap">
+      <div class="hotline-phone-ring">
+        <div class="hotline-phone-ring-circle"></div>
+        <div class="hotline-phone-ring-circle-fill"></div>
+        <div class="hotline-phone-ring-img-circle">
+        <a href="add-post.html" class="pps-btn-img">
+          <i data-feather="plus-circle"></i>
+        </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+  <!-- START JAVASCRIPT -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/theme.js"></script>
+
+
+
+</body>
+
+</html>
