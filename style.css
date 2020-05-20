@@ -4,6 +4,7 @@
 @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1240px;
+        padding:0px
     }
 }
 
@@ -13,6 +14,9 @@ body {
       }
     a{
       color: #5a5a5a;
+    }
+    .h2, h2 {
+        font-size: 1.4rem;
     }
     #chartdiv {
       width: 100%;
@@ -54,7 +58,7 @@ body {
     font-size: 1.2rem;
 }
 .search-bar{
-    width: 31%;
+    width: 100%;
 }
 .br-2{
    border-radius:.2em
@@ -63,14 +67,38 @@ body {
       color:#440e62;
       text-decoration:none;
     }
-
-    a:focus {
-        outline: 1px dashed #440e62;
-        outline-offset: 2px;
-    }
     #zab-blogs .text-small a{
       color:#440e62;
       font-weight:500
+    }
+    .border-line{
+        border:1px solid #440e62;
+        border-radius:5px;
+        padding: 0em .5em;
+        height: 40px;
+        transition: all 0.35s ease-in-out;
+    }
+    .link-hover:hover {
+        background: #440e62;
+    }
+    .navbar-brand{
+        margin-right:0px;
+        width: 82px;
+        display: block;
+        padding-right: 0px;
+        margin:0 auto
+    }
+    .navbar{
+        padding: .5em .25em;
+    }
+    .navbar-light .border-line:hover .nav-link{
+        color:#fff
+    }
+    .navbar-light .border-line .nav-link {
+    color: #333;
+    font-weight: 600;
+    padding: 7px 0px;
+    transition: all 0.35s ease-in-out;
     }
     .text-small {
         font-size: .875rem;
@@ -144,7 +172,7 @@ body {
           top: 2px;
       }
       .section-item {
-        padding: 2em 0px;
+        padding: 1.2em 0px;
         position: relative;
         display: block;
       }
@@ -495,18 +523,18 @@ body {
     }
     .card {
         position: relative;
-        margin-bottom: 30px;
+        margin-bottom: 1em;
         -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
         box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
         cursor: pointer;
-        border-color: #440e62;;
+        border-color: #440e62;
     }
     .card.card-lg{
       border:0px
     }
     .product-card-alt {
-        border: 0;
-        padding: 1em;
+        transition: all 0.5s ease-in-out;
+        padding: .5em;
     }
     .product-card-alt .product-thumb {
         position: relative;
@@ -708,6 +736,7 @@ body {
     }
     .text-muted {
         color: #adb5bd!important;
+        font-style: italic;
     }
     .nav .text-muted {
         color: #333!important;
@@ -1492,7 +1521,6 @@ fieldset, label { margin: 0; padding: 0; }
 .rating > input:checked ~ label:hover ~ label { color: #440e62;  }
 
 .pagination li{
-      padding: 8px 15px;
     border: 1px solid #ddd;
     border-radius: 2px;
     margin-right: 15px;
@@ -1516,9 +1544,6 @@ fieldset, label { margin: 0; padding: 0; }
     font-style: italic;
     font-size: 14px;
 }
-.success_template{
-
-}
 .success_template .top-area{
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
@@ -1539,29 +1564,59 @@ fieldset, label { margin: 0; padding: 0; }
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.d-margin-left{
+     margin-left:15px
+}
+.product-thumb{
+    position:relative
+}
+.author-thumb{
+    position: absolute;
+    top:10px;
+    left:10px
+}
+.author-thumb img{
+    width: 36px !important;
+    height: 36px;
+    border:2px solid #fff;
+}
+.author-thumb {
+    padding: 5px 15px 5px 5px;
+    border-radius: 26px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    color:#fff
+}
+.author-thumb .author-name{
+    opacity:0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.product-thumb:hover .author-thumb{
+    opacity:1;
+    background-color:rgba(0,0,0,0.55);
+}
+.product-thumb:hover .author-name{
+    opacity:1;
+}
+.product-card-alt:hover {
+    -webkit-box-shadow: 0 0.75rem 1rem rgba(18, 38, 63, 0.2);
+    box-shadow: 0 0.75rem 1rem rgba(18, 38, 63, 0.2);
+}
+.card-body  h4{
+    font-weight: 500;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 1em;
+}
       /* RESPONSIVE CSS
       -------------------------------------------------- */
 
@@ -1573,6 +1628,12 @@ fieldset, label { margin: 0; padding: 0; }
             left:1em;
             bottom:0
           }
+         .top-mobile{
+             margin-bottom:.5em
+         }
+         .d-margin-left{
+             margin-left:0px
+         }
 }
 
 
@@ -1606,7 +1667,7 @@ fieldset, label { margin: 0; padding: 0; }
         }
         .top-mobile{
             padding-bottom:.2em;
-            margin-bottom:.2em
+            margin-bottom: .5em;
         }
         .navbar .container{
             display:block
