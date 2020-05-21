@@ -62,8 +62,7 @@
             </li>
           </ul>
         </div>
-        <div
-          class="navbar-toolbar d-flex flex-shrink-0 align-items-center flex-fill justify-content-center-mobile d-margin-left">
+        <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center flex-fill justify-content-center-mobile d-margin-left">
           <div class="search-bar d-none d-md-flex d-lg-flex ">
             <form class="form-inline my-2 my-md-0 d-lg-flex input-group-overlay ">
               <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm sản phẩm">
@@ -101,7 +100,7 @@
             </div>
           </a>
           <div class="dropdown navbar-tool ml-3 ml-lg-0 mr-n1">
-            <div class="navbar-tool-icon-box">
+            <div class="navbar-tool-icon-box" >
 
               <a href="#">
                 <i data-feather="bell"></i>
@@ -159,10 +158,10 @@
               Dropdown button
             </button> -->
 
-            <div class="navbar-tool-icon-box">
+            <div class="navbar-tool-icon-box" >
               <i data-feather="user"></i>
             </div>
-            <div class="navbar-tool-text ml-n3">Admin</div>
+            <div class="navbar-tool-text ml-n3" >Admin</div>
             <div class="dropdown-menu dropdown-menu-right dropdown-content">
               <a class="dropdown-item" href="profile.html"><i data-feather="more-vertical" class="mr-2"></i>Tài
                 Khoản</a>
@@ -186,7 +185,7 @@
             <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown
             </button> -->
-            <a class="navbar-tool-icon-box bg-secondary">
+            <a class="navbar-tool-icon-box bg-secondary" >
               <span class="navbar-tool-label">4</span><i data-feather="shopping-bag"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-content">
@@ -320,33 +319,63 @@
   </header>
 
   <div class="clearfix"></div>
-
+  
   <main id="page-content" role="main">
 
     <div class="clearfix"></div>
 
-    <section class="slice slice-lg section-item my-5">
+    <section class="py-12 my-5">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header  text-center">
-                <!-- Heading -->
-                <h2 class="mb-4">Quên Mật khẩu</h2>
-                <!-- Subheading -->
-              </div>
+          <div class="col-12 col-md-6">
+
+            <!-- Card -->
+            <div class="card card-lg mb-10 mb-md-0">
               <div class="card-body">
-                <p>Quên mật khẩu? Vui lòng nhập tên người dùng hoặc địa chỉ email của bạn. Bạn sẽ nhận được một liên
-                  kết để tạo một mật khẩu mới qua email.</p>
-                <form>
-                  <div class="form-group form-imline">
-                    <div class="mb-3"><strong>Điền Email hoặc Số điện thoại</strong></div>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                <!-- Form -->
+                <form class="email-login">
+                  <div class="p-">
+                    <h5 id="modallogintitle" class="modal-title">Chào mừng bạn tới Zap.city!</h5>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="Password" />
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-block btn-purple">Đăng Nhập</button>
+                    </div>
+                    <div class="form-check custom-control custom-checkbox">
+                      <div class="float-left">
+                        <input name="remember" type="checkbox" id="remember" class="custom-control-input">
+                        <label for="remember" class="custom-control-label">Ghi nhớ đăng nhập</label></div>
+                      <div class="float-right">
+                        <a href="#" id="forgot-box-link" class="link-highlight text-forgot">Quên mật khẩu?</a>
+                      </div>
+                      <div class="clearfix"></div>
+                      
+                    </div>
+                    <div class="social-login">
+                      <a href="#">
+                        <i class="fa fa-facebook fa-lg"></i>
+                        Đăng nhập với facebook
+                      </a>
+                      <a href="#">
+                        <i class="fa fa-google-plus fa-lg"></i>
+                        Đăng nhập với Google
+                      </a>
+                    </div>
                   </div>
-                  <button type="submit" class="btn btn-primary btn-block">Lấy lại mật khẩu</button>
+      
                 </form>
+
+              </div>
+              <div class="card-footer text-center">
+                Bạn không có tài khoản? <a href="#" class="text-purplet">Đăng ký ngay</a>
               </div>
             </div>
+
           </div>
         </div>
       </div>

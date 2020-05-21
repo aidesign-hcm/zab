@@ -47,8 +47,11 @@
     <nav class="navbar navbar-expand navbar-light bd-navbar border-bottom">
       <div class="container d-md-block d-lg-flex">
         <div class="navbar navbar-expand py-0 px-0 top-mobile">
-          <div class="logo-block border-line mr-2">
+          <div class="logo-block border-line mr-2 hide-mobile">
             <a class="navbar-brand" href="index.html"><img src="images/site/logo.png" alt="zap.city" /></a>
+          </div>
+          <div class="logo-block btn-primary border-line mr-2 show-mobile">
+            <a class="navbar-brand" href="index.html"><img src="images/site/logo-white.png" alt="zap.city" /></a>
           </div>
           <ul class="navbar-nav">
             <li class="nav-item border-line link-hover mr-2">
@@ -59,8 +62,8 @@
             </li>
           </ul>
         </div>
-        <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center flex-fill justify-content-center d-margin-left">
-          <div class="search-bar d-none d-md-flex d-lg-flex mr-4 ">
+        <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center flex-fill justify-content-center-mobile d-margin-left">
+          <div class="search-bar d-none d-md-flex d-lg-flex ">
             <form class="form-inline my-2 my-md-0 d-lg-flex input-group-overlay ">
               <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm sản phẩm">
               <div class="input-group-append-overlay"><span class="input-group-text">
@@ -97,11 +100,14 @@
             </div>
           </a>
           <div class="dropdown navbar-tool ml-3 ml-lg-0 mr-n1">
-            <div class="navbar-tool-icon-box" data-toggle="dropdown">
+            <div class="navbar-tool-icon-box" >
 
-              <a href="#"><i data-feather="bell"></i><span class="navbar-tool-label">2</span></a>
+              <a href="#">
+                <i data-feather="bell"></i>
+                <span class="navbar-tool-label">2</span>
+              </a>
             </div>
-            <div class="dropdown-menu dropdown-menu-center">
+            <div class="dropdown-menu dropdown-menu-center dropdown-content">
               <div class="simplebar-mask">
                 <div class="simplebar-offset">
                   <div class="simplebar-content-wrapper"
@@ -152,11 +158,11 @@
               Dropdown button
             </button> -->
 
-            <div class="navbar-tool-icon-box" data-toggle="dropdown">
+            <div class="navbar-tool-icon-box" >
               <i data-feather="user"></i>
             </div>
-            <div class="navbar-tool-text ml-n3" data-toggle="dropdown">Admin</div>
-            <div class="dropdown-menu dropdown-menu-right">
+            <div class="navbar-tool-text ml-n3" >Admin</div>
+            <div class="dropdown-menu dropdown-menu-right dropdown-content">
               <a class="dropdown-item" href="profile.html"><i data-feather="more-vertical" class="mr-2"></i>Tài
                 Khoản</a>
               <a class="dropdown-item" href="#"><i data-feather="pie-chart" class="mr-2"></i>Thu Nhập</a>
@@ -179,11 +185,10 @@
             <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown
             </button> -->
-            <a class="navbar-tool-icon-box bg-secondary" data-toggle="dropdown">
+            <a class="navbar-tool-icon-box bg-secondary" >
               <span class="navbar-tool-label">4</span><i data-feather="shopping-bag"></i>
             </a>
-            <a class="navbar-tool-text" data-toggle="dropdown"><small>Giỏ hàng</small>1.400.00 đ</a>
-            <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-menu dropdown-menu-right dropdown-content">
               <div class="widget widget-cart px-3 nav-item pt-2 pb-3">
                 <div style="height: 15rem;" data-simplebar="init" data-simplebar-auto-hide="false">
                   <div class="simplebar-wrapper" style="margin: 0px -16px 0px 0px;">
@@ -332,10 +337,10 @@
     </div>
     <section class="sort-post">
       <div class="container">
-        <button type="button" class="btn btn-outline-primary mb-2 px-2">Dành cho bạn</button>
-        <button type="button" class="btn btn-outline-primary mb-2 px-2">Phổ biến</button>
-        <button type="button" class="btn btn-outline-primary mb-2 px-2">Đang theo dõi</button>
-        <button type="button" class="btn btn-primary mb-2 px-2">Bài viết mới</button>
+        <a href="#" class="blog-sort btn-outline-primary mb-2 px-2 mr-2">Dành cho bạn</a>
+        <a href="#" class="blog-sort btn-outline-primary mb-2 px-2 mr-2">Phổ biến</a>
+        <a href="#" class="blog-sort btn-outline-primary mb-2 px-2 mr-2">Đang theo dõi</a>
+        <a href="#" class="blog-sort btn-primary mb-2 px-2 mr-2">Bài viết mới</a>
       </div>
     </section>
     <section class="slice slice-lg section-item">
@@ -475,10 +480,9 @@
         <h2 class=" mt-2">Bài viết Mới</h2>
       </div>
       <div class="row pt-">
-        <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate  p-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate  p-3" >
           <div class="card product-card-alt">
             <div class="product-thumb">
-              <a href="#">
                 <div class="d-flex align-items-center mt-1 author-thumb">
                   <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
                   <div class="ml-1 author-name">
@@ -486,7 +490,7 @@
                   </div>
                 </div>
                 <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
-              </a>
+             
             </div>
             <div class="card-body d-flex flex-column">
               <a href="#">
@@ -503,7 +507,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate  p-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate  p-3" >
           <div class="card product-card-alt">
             <div class="product-thumb">
               <a href="#">
