@@ -44,47 +44,32 @@
 
 <body>
   <header>
-    <div id="navbar-top-main" class="navbar-top  navbar-dark bg-primary">
-      <div class="container px-0">
-        <div class="navbar-nav ">
-          <div>
-            <ul class="nav">
-              <li class="nav-item ml-lg-2">
-                <a class="nav-link px-0" href="#">
-                  <span class="d-none d-lg-inline-block">Blog</span>
-                </a>
-              </li>
-              <li class="nav-item ml-lg-2">
-                <a class="nav-link px-0" href="#">
-                  <span class="d-none d-lg-inline-block">Sản phẩm</span>
-                </a>
-              </li>
-              <li class="nav-item ml-lg-2">
-                <a class="nav-link px-0" href="#">
-                  <span class="d-none d-lg-inline-block">Liên hệ</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
     <nav class="navbar navbar-expand navbar-light bd-navbar border-bottom">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="images/site/logo.png" alt="zap.city" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
-          aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="input-group-overlay d-none d-lg-flex mx-4">
-          <form class="form-inline my-2 my-md-0 d-lg-flex input-group-overlay ">
-            <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm sản phẩm">
-            <div class="input-group-append-overlay"><span class="input-group-text">
-                <i data-feather="search"></i></span></div>
-          </form>
+      <div class="container d-md-block d-lg-flex">
+        <div class="navbar navbar-expand py-0 px-0 top-mobile">
+          <div class="logo-block border-line mr-2 hide-mobile">
+            <a class="navbar-brand" href="index.html"><img src="images/site/logo.png" alt="zap.city" /></a>
+          </div>
+          <div class="logo-block btn-primary border-line mr-2 show-mobile">
+            <a class="navbar-brand" href="index.html"><img src="images/site/logo-white.png" alt="zap.city" /></a>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item border-line link-hover mr-2">
+              <a class="nav-link" href="blog-archive.html"><i data-feather="book" class="mr-2"></i>Bài viết</a>
+            </li>
+            <li class="nav-item border-line link-hover">
+              <a class="nav-link" href="product-archive.html"><i data-feather="box" class="mr-2"></i>Sản phẩm</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+        <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center flex-fill justify-content-center-mobile d-margin-left">
+          <div class="search-bar d-none d-md-flex d-lg-flex ">
+            <form class="form-inline my-2 my-md-0 d-lg-flex input-group-overlay ">
+              <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm sản phẩm">
+              <div class="input-group-append-overlay"><span class="input-group-text">
+                  <i data-feather="search"></i></span></div>
+            </form>
+          </div>
           <div class="show-mobile">
             <div class="d-flex">
               <a href="#" data-toggle="modal" data-target="#searchModal">
@@ -110,19 +95,74 @@
             </div>
           </div>
           <a href="add-post.html" class="">
-            <div class="navbar-tool-text ml-n3">
-              <i data-feather="plus-circle"></i> Viết bài
+            <div class="navbar-tool-text ml-n3 btn-purple py-2 px-3 br-2">
+              Viết bài
             </div>
           </a>
-          <div class="dropdown navbar-tool ml-3 ml-lg-0 mr-n1 mr-lg-2">
+          <div class="dropdown navbar-tool ml-3 ml-lg-0 mr-n1">
+            <div class="navbar-tool-icon-box bg-secondary">
+
+              <a href="#">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="navbar-tool-label">2</span>
+              </a>
+            </div>
+            <div class="dropdown-menu dropdown-menu-center dropdown-content">
+              <div class="simplebar-mask">
+                <div class="simplebar-offset">
+                  <div class="simplebar-content-wrapper"
+                    style="height: auto; padding-right: 0px; padding-bottom: 0px; overflow: hidden;">
+                    <div class="simplebar-content" style="padding: 0px 16px 0px 0px;">
+                      <div class="py-2 border-bottom">
+                        <div class="media align-items-center"><a class="d-block mr-2" href="#"><img width="64"
+                              src="./images/cart/03.jpg" alt="Product"></a>
+                          <div class="media-body">
+                            <h6 class="widget-product-title"><a href="#">Bạn <small> có</small> Một thông báo mới</a>
+                            </h6>
+                            <div class="widget-notice-meta"><span class="text-accent mr-2"><small>1 giờ
+                                  trước</small></span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="py-2 border-bottom">
+                        <div class="media align-items-center"><a class="d-block mr-2" href="#"><img width="64"
+                              src="./images/cart/03.jpg" alt="Product"></a>
+                          <div class="media-body">
+                            <h6 class="widget-product-title"><a href="#">Bạn <small>nhận được</small> Đơn hàng mới</a>
+                            </h6>
+                            <div class="widget-notice-meta"><span class="text-accent mr-2"><small>12 giờ
+                                  trước</small></span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="py-2 border-bottom">
+                        <div class="media align-items-center notice-readed"><a class="d-block mr-2" href="#"><img
+                              width="64" src="./images/cart/03.jpg" alt="Product"></a>
+                          <div class="media-body">
+                            <h6 class="widget-product-title"><a href="#">Admin <small>đã đăng</small> bài viết Về Iphone
+                                11</a></h6>
+                            <div class="widget-notice-meta"><span class="text-accent mr-2"><small>3 ngày
+                                  trước</small></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="dropdown navbar-tool ml-3 ml-lg-0 mr-n1">
             <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown button
             </button> -->
-            <div class="navbar-tool-icon-box" data-toggle="dropdown">
-              <i data-feather="user"></i>
+
+            <div class="navbar-tool-icon-box larger-icon" >
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
             </div>
-            <div class="navbar-tool-text ml-n3" data-toggle="dropdown">Chào, Admin</div>
-            <div class="dropdown-menu dropdown-menu-right">
+            <div class="navbar-tool-text ml-n2" ></div>
+            <div class="dropdown-menu dropdown-menu-right dropdown-content">
               <a class="dropdown-item" href="profile.html"><i data-feather="more-vertical" class="mr-2"></i>Tài
                 Khoản</a>
               <a class="dropdown-item" href="#"><i data-feather="pie-chart" class="mr-2"></i>Thu Nhập</a>
@@ -141,15 +181,14 @@
           </div>
 
 
-          <div class="dropdown navbar-tool ml-3">
+          <div class="dropdown navbar-tool">
             <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown
             </button> -->
-            <a class="navbar-tool-icon-box bg-secondary dropdown-toggle" data-toggle="dropdown">
-              <span class="navbar-tool-label">4</span><i data-feather="shopping-bag"></i>
+            <a class="navbar-tool-icon-box bg-secondary" >
+              <span class="navbar-tool-label">4</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </a>
-            <a class="navbar-tool-text" data-toggle="dropdown"><small>Giỏ hàng</small>1.400.00 đ</a>
-            <div class="dropdown-menu dropdown-menu-right" style="width: 20rem;">
+            <div class="dropdown-menu dropdown-menu-right dropdown-content">
               <div class="widget widget-cart px-3 nav-item pt-2 pb-3">
                 <div style="height: 15rem;" data-simplebar="init" data-simplebar-auto-hide="false">
                   <div class="simplebar-wrapper" style="margin: 0px -16px 0px 0px;">
@@ -240,7 +279,7 @@
 
           <a href="#" class="pr-3 nav-item nav-item dropdown" data-id="sub">Dropdown menu <i data-feather="chevron-down"
               class=""></i></a>
-          
+
           <a href="#" class="px-3 nav-item nav-item dropdown" data-id="sub-two">Dropdown menu two<i
               data-feather="chevron-down" class=""></i></a>
           <a class="pr-3" href="categories.html">Danh mục sản phẩm</a>
@@ -398,272 +437,282 @@
             <div class="row ">
               <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item " data-aos="fade-up"
                 data-aos-delay="200">
+                <div class="card product-card-alt">
+                  <div class="edit--dellete">
+                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                    <span class="dellete-icon"><i data-feather="x"></i></span>
+                  </div>
+                  <div class="product-thumb">
+                    <div class="d-flex align-items-center mt-1 author-thumb">
+                      <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
+                      <div class="ml-1 author-name">
+                        <span class="text-small">Abby Sims</span>
+                      </div>
+                    </div>
+                    <img src="./images/article/article-2.jpg" alt="Image" class="card-img-top">
+                 
+                </div>
+                  <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="text-small d-flex">
+                        <span class="text-muted">29th November</span>
+                      </div>
+                      <span class="badge bg-primary-alt text-primary">
+                        <a href="#">Business</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="card product-card-alt">
+                  <div class="edit--dellete">
+                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                    <span class="dellete-icon"><i data-feather="x"></i></span>
+                  </div>
+                  <div class="product-thumb">
+                    <div class="d-flex align-items-center mt-1 author-thumb">
+                      <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
+                      <div class="ml-1 author-name">
+                        <span class="text-small">Abby Sims</span>
+                      </div>
+                    </div>
+                    <img src="./images/article/article-3.jpg" alt="Image" class="card-img-top">
+                 
+                </div>
+                  <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="text-small d-flex">
+                        <span class="text-muted">29th November</span>
+                      </div>
+                      <span class="badge bg-primary-alt text-primary">
+                        <a href="#">Business</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="card product-card-alt">
+                  <div class="edit--dellete">
+                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                    <span class="dellete-icon"><i data-feather="x"></i></span>
+                  </div>
+                  <div class="product-thumb">
+                    <div class="d-flex align-items-center mt-1 author-thumb">
+                      <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
+                      <div class="ml-1 author-name">
+                        <span class="text-small">Abby Sims</span>
+                      </div>
+                    </div>
+                    <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                 
+                </div>
+                  <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="text-small d-flex">
+                        <span class="text-muted">29th November</span>
+                      </div>
+                      <span class="badge bg-primary-alt text-primary">
+                        <a href="#">Business</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="card product-card-alt">
+                  <div class="edit--dellete">
+                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                    <span class="dellete-icon"><i data-feather="x"></i></span>
+                  </div>
+                  <div class="product-thumb">
+                    <div class="d-flex align-items-center mt-1 author-thumb">
+                      <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
+                      <div class="ml-1 author-name">
+                        <span class="text-small">Abby Sims</span>
+                      </div>
+                    </div>
+                    <img src="./images/article/article-2.jpg" alt="Image" class="card-img-top">
+                 
+                </div>
+                  <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="text-small d-flex">
+                        <span class="text-muted">29th November</span>
+                      </div>
+                      <span class="badge bg-primary-alt text-primary">
+                        <a href="#">Business</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="card product-card-alt">
+                  <div class="edit--dellete">
+                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                    <span class="dellete-icon"><i data-feather="x"></i></span>
+                  </div>
+                  <div class="product-thumb">
+                    <div class="d-flex align-items-center mt-1 author-thumb">
+                      <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
+                      <div class="ml-1 author-name">
+                        <span class="text-small">Abby Sims</span>
+                      </div>
+                    </div>
+                    <img src="./images/article/article-4.jpg" alt="Image" class="card-img-top">
+                 
+                </div>
+                  <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="text-small d-flex">
+                        <span class="text-muted">29th November</span>
+                      </div>
+                      <span class="badge bg-primary-alt text-primary">
+                        <a href="#">Business</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
+                data-aos-delay="200">
                 <div class="card">
                   <div class="edit--dellete">
                     <span class="edit-icon"><i data-feather="edit-2"></i></span>
                     <span class="dellete-icon"><i data-feather="x"></i></span>
                   </div>
-
                   <a href="#">
                     <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
                   </a>
                   <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
                     <div class="d-flex justify-content-between mb-3">
                       <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
                         <span class="text-muted">29th November</span>
                       </div>
                       <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
+                        <a href="#">Business</a>
                       </span>
                     </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
                   </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
                 data-aos-delay="200">
-                <div class="card">
+                <div class="card product-card-alt">
                   <div class="edit--dellete">
                     <span class="edit-icon"><i data-feather="edit-2"></i></span>
                     <span class="dellete-icon"><i data-feather="x"></i></span>
                   </div>
-                  <a href="#">
-                    <img src="./images/article/article-4.jpg" alt="Image" class="card-img-top">
-                  </a>
-                  <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
-                        <span class="text-muted">29th November</span>
+                  <div class="product-thumb">
+                    <div class="d-flex align-items-center mt-1 author-thumb">
+                      <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
+                      <div class="ml-1 author-name">
+                        <span class="text-small">Abby Sims</span>
                       </div>
-                      <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
-                      </span>
                     </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
-                data-aos-delay="200">
-                <div class="card">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <a href="#">
-                    <img src="./images/article/article-2.jpg" alt="Image" class="card-img-top">
-                  </a>
-                  <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
-                        <span class="text-muted">29th November</span>
-                      </div>
-                      <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
-                      </span>
-                    </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
-                data-aos-delay="200">
-                <div class="card">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <a href="#">
-                    <img src="./images/article/article-3.jpg" alt="Image" class="card-img-top">
-                  </a>
-                  <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
-                        <span class="text-muted">29th November</span>
-                      </div>
-                      <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
-                      </span>
-                    </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
-                data-aos-delay="200">
-                <div class="card">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <a href="#">
-                    <img src="./images/article/article-4.jpg" alt="Image" class="card-img-top">
-                  </a>
-                  <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
-                        <span class="text-muted">29th November</span>
-                      </div>
-                      <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
-                      </span>
-                    </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
-                data-aos-delay="200">
-                <div class="card">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <a href="#">
                     <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
-                  </a>
+                 
+                </div>
                   <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
                     <div class="d-flex justify-content-between mb-3">
                       <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
                         <span class="text-muted">29th November</span>
                       </div>
                       <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
+                        <a href="#">Business</a>
                       </span>
                     </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
                   </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
                 data-aos-delay="200">
-                <div class="card">
+                <div class="card product-card-alt">
                   <div class="edit--dellete">
                     <span class="edit-icon"><i data-feather="edit-2"></i></span>
                     <span class="dellete-icon"><i data-feather="x"></i></span>
                   </div>
-                  <a href="#">
+                  <div class="product-thumb">
+                    <div class="d-flex align-items-center mt-1 author-thumb">
+                      <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
+                      <div class="ml-1 author-name">
+                        <span class="text-small">Abby Sims</span>
+                      </div>
+                    </div>
                     <img src="./images/article/article-2.jpg" alt="Image" class="card-img-top">
-                  </a>
+                 
+                </div>
                   <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
                     <div class="d-flex justify-content-between mb-3">
                       <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
                         <span class="text-muted">29th November</span>
                       </div>
                       <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
+                        <a href="#">Business</a>
                       </span>
                     </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
                   </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
                 data-aos-delay="200">
-                <div class="card">
+                <div class="card product-card-alt">
                   <div class="edit--dellete">
                     <span class="edit-icon"><i data-feather="edit-2"></i></span>
                     <span class="dellete-icon"><i data-feather="x"></i></span>
                   </div>
-                  <a href="#">
+                  <div class="product-thumb">
+                    <div class="d-flex align-items-center mt-1 author-thumb">
+                      <img src="./images//female-3.jpg" alt="Image" class="avatar avatar-sm">
+                      <div class="ml-1 author-name">
+                        <span class="text-small">Abby Sims</span>
+                      </div>
+                    </div>
                     <img src="./images/article/article-3.jpg" alt="Image" class="card-img-top">
-                  </a>
-                  <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
-                        <span class="text-muted">29th November</span>
-                      </div>
-                      <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
-                      </span>
-                    </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
-                  </div>
+                 
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-4 d-flex aos-init aos-animate p-3 blog-item" data-aos="fade-up"
-                data-aos-delay="200">
-                <div class="card">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <a href="#">
-                    <img src="./images/article/article-4.jpg" alt="Image" class="card-img-top">
-                  </a>
                   <div class="card-body d-flex flex-column">
+                    <a href="#">
+                      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                    </a>
                     <div class="d-flex justify-content-between mb-3">
                       <div class="text-small d-flex">
-                        <div class="mr-2">
-                          <a href="#">Business</a>
-                        </div>
                         <span class="text-muted">29th November</span>
                       </div>
                       <span class="badge bg-primary-alt text-primary">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> 12
+                        <a href="#">Business</a>
                       </span>
                     </div>
-                    <a href="#">
-                      <h4>How to build collateral</h4>
-                    </a>
-
-
                   </div>
                 </div>
               </div>
@@ -689,7 +738,12 @@
 
                       <h3 class="text-center mb-4">Thêm danh sách</h3>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="newListtitle" aria-describedby="emailHelp" placeholder="Tên danh sách ...">
+                        <h4>Thêm ảnh bìa danh sách</h4>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="newListtitle" aria-describedby="emailHelp"
+                          placeholder="Tên danh sách ...">
                       </div>
                       <div class="form-group row">
                         <div class="col-sm-9">
@@ -704,7 +758,7 @@
                             <button type="submit" class="btn btn-primary btn-block">Thêm</button>
                           </div>
                         </div>
-                        
+
                       </div>
                       <div class="form-group">
                         <div class="item-list--">
@@ -713,7 +767,8 @@
                               Tên bài viết 1
                             </a>
                           </div>
-                          <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">×</span></button>
+                          <button class="close text-danger" type="button" aria-label="Remove"><span
+                              aria-hidden="true">×</span></button>
                         </div>
                         <div class="item-list--">
                           <div class="item-titeblock">
@@ -721,7 +776,8 @@
                               Tên bài viết 1
                             </a>
                           </div>
-                          <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">×</span></button>
+                          <button class="close text-danger" type="button" aria-label="Remove"><span
+                              aria-hidden="true">×</span></button>
                         </div>
                         <div class="item-list--">
                           <div class="item-titeblock">
@@ -729,7 +785,8 @@
                               Tên bài viết 1
                             </a>
                           </div>
-                          <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">×</span></button>
+                          <button class="close text-danger" type="button" aria-label="Remove"><span
+                              aria-hidden="true">×</span></button>
                         </div>
                       </div>
                       <div class="form-group form-check">
@@ -746,575 +803,608 @@
               <div class="col-12 col-md-4 p-4">
                 <!-- Card -->
                 <div class="card p-2">
+                  <div class="product-thumb">
+                    <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                  </div>
                   <div class="edit--dellete">
                     <span class="edit-icon"><i data-feather="edit-2"></i></span>
                     <span class="dellete-icon"><i data-feather="x"></i></span>
                   </div>
                   <!-- Body -->
                   <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 1</h4>
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 1</h4>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-4 p-4">
-                <!-- Card -->
-                <div class="card p-2">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <!-- Body -->
-                  <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 2</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-4">
-                <!-- Card -->
-                <div class="card p-2">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <!-- Body -->
-                  <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 3</h4>
+                <div class="col-12 col-md-4 p-4">
+                  <!-- Card -->
+                  <div class="card p-2">
+                    <div class="product-thumb">
+                      <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                    </div>
+                    <div class="edit--dellete">
+                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                      <span class="dellete-icon"><i data-feather="x"></i></span>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body mx-6 mx-lg-11 bg-white">
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 2</h4>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-4 p-4">
-                <!-- Card -->
-                <div class="card p-2">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <!-- Body -->
-                  <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 4</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-4">
-                <!-- Card -->
-                <div class="card p-2">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <!-- Body -->
-                  <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 5</h4>
+                <div class="col-12 col-md-4 p-4">
+                  <!-- Card -->
+                  <div class="card p-2">
+                    <div class="product-thumb">
+                      <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                    </div>
+                    <div class="edit--dellete">
+                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                      <span class="dellete-icon"><i data-feather="x"></i></span>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body mx-6 mx-lg-11 bg-white">
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 3</h4>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-4 p-4">
-                <!-- Card -->
-                <div class="card p-2">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <!-- Body -->
-                  <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 6</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-4">
-                <!-- Card -->
-                <div class="card p-2">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <!-- Body -->
-                  <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 7</h4>
+                <div class="col-12 col-md-4 p-4">
+                  <!-- Card -->
+                  <div class="card p-2">
+                    <div class="edit--dellete">
+                      <div class="product-thumb">
+                        <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                      </div>
+                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                      <span class="dellete-icon"><i data-feather="x"></i></span>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body mx-6 mx-lg-11 bg-white">
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 4</h4>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-4 p-4">
-                <!-- Card -->
-                <div class="card p-2">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <!-- Body -->
-                  <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 8</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-4">
-                <!-- Card -->
-                <div class="card p-2">
-                  <div class="edit--dellete">
-                    <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                    <span class="dellete-icon"><i data-feather="x"></i></span>
-                  </div>
-                  <!-- Body -->
-                  <div class="card-body mx-6 mx-lg-11 bg-white">
-                    <!-- Heading -->
-                    <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 9</h4>
+                <div class="col-12 col-md-4 p-4">
+                  <!-- Card -->
+                  <div class="card p-2">
+                    <div class="edit--dellete">
+                      <div class="product-thumb">
+                        <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                      </div>
+                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                      <span class="dellete-icon"><i data-feather="x"></i></span>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body mx-6 mx-lg-11 bg-white">
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 5</h4>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="col-12 col-md-4 p-4">
+                  <!-- Card -->
+                  <div class="card p-2">
+                    <div class="edit--dellete">
+                      <div class="product-thumb">
+                        <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                      </div>
+                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                      <span class="dellete-icon"><i data-feather="x"></i></span>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body mx-6 mx-lg-11 bg-white">
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 6</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 p-4">
+                  <!-- Card -->
+                  <div class="card p-2">
+                    <div class="edit--dellete">
+                      <div class="product-thumb">
+                        <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                      </div>
+                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                      <span class="dellete-icon"><i data-feather="x"></i></span>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body mx-6 mx-lg-11 bg-white">
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 7</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 p-4">
+                  <!-- Card -->
+                  <div class="card p-2">
+                    <div class="edit--dellete">
+                      <div class="product-thumb">
+                        <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                      </div>
+                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                      <span class="dellete-icon"><i data-feather="x"></i></span>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body mx-6 mx-lg-11 bg-white">
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 8</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 p-4">
+                  <!-- Card -->
+                  <div class="card p-2">
+                    <div class="edit--dellete">
+                      <div class="product-thumb">
+                        <img src="./images/article/article-1.jpg" alt="Image" class="card-img-top">
+                      </div>
+                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                      <span class="dellete-icon"><i data-feather="x"></i></span>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body mx-6 mx-lg-11 bg-white">
+                      <!-- Heading -->
+                      <h4 class="mb-0"><i data-feather="book-open" class="mr-2"></i>Danh sách bài viết 9</h4>
+                    </div>
+                  </div>
+                </div>
 
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab">
+              <div class="my-4">
+                <button class="btn btn-primary">
+                  <i data-feather="plus-circle" class="mr-2"></i> Đăng Sản phẩm
+                </button>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-4 p-3 block-slick-product">
+                  <div class="card product-card-alt">
+                    <div class="product-thumb">
+                      <div class="edit--dellete">
+                        <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                        <span class="dellete-icon"><i data-feather="x"></i></span>
+                      </div>
+
+                      <a class="product-thumb-overlay" href="#"></a><img src="./images/01.jpg" alt="Product">
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                        <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
+                            href="#">Createx Std. </a>in <a class="product-meta font-weight-medium"
+                            href="#">Graphics</a>
+                        </div>
+                        <span class="static-rating static-rating-sm">
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                      </div>
+                      <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
+                            class="font-size-xs ml-1">Sales</span></div>
+                        <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 p-3 block-slick-product">
+                  <div class="card product-card-alt">
+                    <div class="product-thumb">
+                      <div class="edit--dellete">
+                        <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                        <span class="dellete-icon"><i data-feather="x"></i></span>
+                      </div>
+                      <a class="product-thumb-overlay" href="#"></a><img src="./images/01.jpg" alt="Product">
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                        <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
+                            href="#">Createx Std. </a>in <a class="product-meta font-weight-medium"
+                            href="#">Graphics</a>
+                        </div>
+                        <span class="static-rating static-rating-sm">
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                      </div>
+                      <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
+                            class="font-size-xs ml-1">Sales</span></div>
+                        <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 p-3 block-slick-product">
+                  <div class="card product-card-alt">
+                    <div class="product-thumb">
+                      <div class="edit--dellete">
+                        <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                        <span class="dellete-icon"><i data-feather="x"></i></span>
+                      </div>
+                      <a class="product-thumb-overlay" href="#"></a><img src="./images/02.jpg" alt="Product">
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                        <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
+                            href="#">Createx Std. </a>in <a class="product-meta font-weight-medium"
+                            href="#">Graphics</a>
+                        </div>
+                        <span class="static-rating static-rating-sm">
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                      </div>
+                      <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
+                            class="font-size-xs ml-1">Sales</span></div>
+                        <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 p-3 block-slick-product">
+                  <div class="card product-card-alt">
+                    <div class="product-thumb">
+                      <div class="edit--dellete">
+                        <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                        <span class="dellete-icon"><i data-feather="x"></i></span>
+                      </div>
+                      <a class="product-thumb-overlay" href="#"></a><img src="./images/03.jpg" alt="Product">
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                        <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
+                            href="#">Createx Std. </a>in <a class="product-meta font-weight-medium"
+                            href="#">Graphics</a>
+                        </div>
+                        <span class="static-rating static-rating-sm">
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                      </div>
+                      <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
+                            class="font-size-xs ml-1">Sales</span></div>
+                        <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 p-3 block-slick-product">
+                  <div class="card product-card-alt">
+                    <div class="product-thumb">
+                      <div class="edit--dellete">
+                        <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                        <span class="dellete-icon"><i data-feather="x"></i></span>
+                      </div>
+                      <a class="product-thumb-overlay" href="#"></a><img src="./images/04.jpg" alt="Product">
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                        <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
+                            href="#">Createx Std. </a>in <a class="product-meta font-weight-medium"
+                            href="#">Graphics</a>
+                        </div>
+                        <span class="static-rating static-rating-sm">
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                      </div>
+                      <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
+                            class="font-size-xs ml-1">Sales</span></div>
+                        <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 p-3 block-slick-product">
+                  <div class="card product-card-alt">
+                    <div class="product-thumb">
+                      <div class="edit--dellete">
+                        <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                        <span class="dellete-icon"><i data-feather="x"></i></span>
+                      </div>
+                      <a class="product-thumb-overlay" href="#"></a><img src="./images/05.jpg" alt="Product">
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
+                        <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
+                            href="#">Createx Std. </a>in <a class="product-meta font-weight-medium"
+                            href="#">Graphics</a>
+                        </div>
+                        <span class="static-rating static-rating-sm">
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star voted"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                      </div>
+                      <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
+                            class="font-size-xs ml-1">Sales</span></div>
+                        <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-products-tab">
+              <div class="profile-about my-3">
+                <div class="edit--dellete">
+                  <span class="edit-icon"><i data-feather="edit-2"></i></span>
+                  <span class="dellete-icon"><i data-feather="x"></i></span>
+                </div>
+                <div class="profile-full-desc">
+                  <h3>Dòng giới thiệu</h3>
+                  <p class="mb-0 profile-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <hr class="my-4">
+                <div class="profile-info mt-3">
+                  <h3>Liên kết</h3>
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">
+                        <i class="fa fa-envelope-o "></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">
+                        <i class="fa fa-phone"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+              <small>Gia nhập ngày: <span class="be-comment-time">
+                  <i class="fa fa-clock-o"></i>
+                  May 27, 2015 at 3:14am
+                </span></small>
+              <div class="edit-about-profile my-4">
+                <h3>Chỉnh sửa thông tin cá nhân</h3>
+                <form class="mb-4">
+
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+
+                      <!-- First name -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Họ
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control">
+
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+
+                      <!-- Last name -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Tên
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control">
+
+                      </div>
+
+                    </div>
+                    <div class="col-12">
+
+
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <!-- Email address -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Địa chỉ Email
+                        </label>
+
+                        <!-- Input -->
+                        <input type="email" class="form-control">
+
+                      </div>
+
+
+
+                    </div>
+                    <div class="col-12 col-md-6">
+
+                      <!-- Phone -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Số điện thoại
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control mb-3" placeholder="09.." data-mask="(000) 000-0000"
+                          autocomplete="off" maxlength="14">
+
+                      </div>
+
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label>Giới thiệu bản thân</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa fa-facebook mr-2" aria-hidden="true"></i> Link facebook
+                        </label>
+                        <input type="text" class="form-control">
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>
+                          <i class="fa fa-instagram mr-2" aria-hidden="true"></i> Link Instagram
+                        </label>
+                        <input type="text" class="form-control">
+                      </div>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+
+                  <!-- Divider -->
+                  <hr class="mt-4 mb-5">
+
+                  <div class="row">
+                    <div class="col-12 col-md-6 order-md-2">
+
+                      <!-- Card -->
+                      <div class="card bg-light border ml-md-4">
+                        <div class="card-body">
+
+                          <!-- Text -->
+                          <p class="mb-2">
+                            Password requirements
+                          </p>
+
+                          <!-- Text -->
+                          <p class="small text-muted mb-2">
+                            To create a new password, you have to meet all of the following requirements:
+                          </p>
+
+                          <!-- List group -->
+                          <ul class="small text-muted pl-4 mb-0">
+                            <li>
+                              Minimum 8 character
+                            </li>
+                            <li>
+                              At least one special character
+                            </li>
+                            <li>
+                              At least one number
+                            </li>
+                            <li>
+                              Can’t be the same as a previous password
+                            </li>
+                          </ul>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+
+                      <!-- Password -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Password
+                        </label>
+
+                        <!-- Input -->
+                        <input type="password" class="form-control">
+
+                      </div>
+
+                      <!-- New password -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          New password
+                        </label>
+
+                        <!-- Input -->
+                        <input type="password" class="form-control">
+
+                      </div>
+
+                      <!-- Confirm new password -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Confirm new password
+                        </label>
+
+                        <!-- Input -->
+                        <input type="password" class="form-control">
+
+                      </div>
+
+                      <!-- Submit -->
+                      <button type="submit" class="btn btn-primary lift">
+                        Update password
+                      </button>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                </form>
+
+              </div>
 
             </div>
           </div>
-          <div class="tab-pane fade" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab">
-            <div class="my-4">
-              <button class="btn btn-primary">
-                <i data-feather="plus-circle" class="mr-2"></i> Đăng Sản phẩm
-              </button>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-4 p-3 block-slick-product">
-                <div class="card product-card-alt">
-                  <div class="product-thumb">
-                    <div class="edit--dellete">
-                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                      <span class="dellete-icon"><i data-feather="x"></i></span>
-                    </div>
 
-                    <a class="product-thumb-overlay" href="#"></a><img src="./images/01.jpg" alt="Product">
-                  </div>
-                  <div class="card-body">
-                    <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                      <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
-                          href="#">Createx Std. </a>in <a class="product-meta font-weight-medium" href="#">Graphics</a>
-                      </div>
-                      <span class="static-rating static-rating-sm">
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star"></i>
-                      </span>
-                    </div>
-                    <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
-                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                      <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
-                          class="font-size-xs ml-1">Sales</span></div>
-                      <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-3 block-slick-product">
-                <div class="card product-card-alt">
-                  <div class="product-thumb">
-                    <div class="edit--dellete">
-                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                      <span class="dellete-icon"><i data-feather="x"></i></span>
-                    </div>
-                    <a class="product-thumb-overlay" href="#"></a><img src="./images/01.jpg" alt="Product">
-                  </div>
-                  <div class="card-body">
-                    <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                      <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
-                          href="#">Createx Std. </a>in <a class="product-meta font-weight-medium" href="#">Graphics</a>
-                      </div>
-                      <span class="static-rating static-rating-sm">
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star"></i>
-                      </span>
-                    </div>
-                    <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
-                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                      <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
-                          class="font-size-xs ml-1">Sales</span></div>
-                      <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-3 block-slick-product">
-                <div class="card product-card-alt">
-                  <div class="product-thumb">
-                    <div class="edit--dellete">
-                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                      <span class="dellete-icon"><i data-feather="x"></i></span>
-                    </div>
-                    <a class="product-thumb-overlay" href="#"></a><img src="./images/02.jpg" alt="Product">
-                  </div>
-                  <div class="card-body">
-                    <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                      <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
-                          href="#">Createx Std. </a>in <a class="product-meta font-weight-medium" href="#">Graphics</a>
-                      </div>
-                      <span class="static-rating static-rating-sm">
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star"></i>
-                      </span>
-                    </div>
-                    <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
-                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                      <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
-                          class="font-size-xs ml-1">Sales</span></div>
-                      <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-3 block-slick-product">
-                <div class="card product-card-alt">
-                  <div class="product-thumb">
-                    <div class="edit--dellete">
-                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                      <span class="dellete-icon"><i data-feather="x"></i></span>
-                    </div>
-                    <a class="product-thumb-overlay" href="#"></a><img src="./images/03.jpg" alt="Product">
-                  </div>
-                  <div class="card-body">
-                    <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                      <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
-                          href="#">Createx Std. </a>in <a class="product-meta font-weight-medium" href="#">Graphics</a>
-                      </div>
-                      <span class="static-rating static-rating-sm">
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star"></i>
-                      </span>
-                    </div>
-                    <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
-                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                      <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
-                          class="font-size-xs ml-1">Sales</span></div>
-                      <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-3 block-slick-product">
-                <div class="card product-card-alt">
-                  <div class="product-thumb">
-                    <div class="edit--dellete">
-                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                      <span class="dellete-icon"><i data-feather="x"></i></span>
-                    </div>
-                    <a class="product-thumb-overlay" href="#"></a><img src="./images/04.jpg" alt="Product">
-                  </div>
-                  <div class="card-body">
-                    <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                      <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
-                          href="#">Createx Std. </a>in <a class="product-meta font-weight-medium" href="#">Graphics</a>
-                      </div>
-                      <span class="static-rating static-rating-sm">
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star"></i>
-                      </span>
-                    </div>
-                    <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
-                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                      <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
-                          class="font-size-xs ml-1">Sales</span></div>
-                      <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 p-3 block-slick-product">
-                <div class="card product-card-alt">
-                  <div class="product-thumb">
-                    <div class="edit--dellete">
-                      <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                      <span class="dellete-icon"><i data-feather="x"></i></span>
-                    </div>
-                    <a class="product-thumb-overlay" href="#"></a><img src="./images/05.jpg" alt="Product">
-                  </div>
-                  <div class="card-body">
-                    <div class="d-flex flex-wrap justify-content-between align-items-start pb-2">
-                      <div class="text-muted font-size-xs mr-1">by <a class="product-meta font-weight-medium"
-                          href="#">Createx Std. </a>in <a class="product-meta font-weight-medium" href="#">Graphics</a>
-                      </div>
-                      <span class="static-rating static-rating-sm">
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star voted"></i>
-                        <i class="fa fa-star"></i>
-                      </span>
-                    </div>
-                    <h3 class="product-title font-size-sm mb-2"><a href="#">Flat-line E-Commerce Icons (AI)</a></h3>
-                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                      <div class="font-size-sm mr-2"><i class="fa fa-angle-double-down" aria-hidden="true"></i>26<span
-                          class="font-size-xs ml-1">Sales</span></div>
-                      <div class="bg-faded-accent text-accent rounded-sm py-1 px-2">$18.<small>00</small></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-products-tab">
-            <div class="profile-about my-3">
-              <div class="edit--dellete">
-                <span class="edit-icon"><i data-feather="edit-2"></i></span>
-                <span class="dellete-icon"><i data-feather="x"></i></span>
-              </div>
-              <div class="profile-full-desc">
-                <h3>Dòng giới thiệu</h3>
-                <p class="mb-0 profile-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor
-                  incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-              <hr class="my-4">
-              <div class="profile-info mt-3">
-                <h3>Liên kết</h3>
-                <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
-                      <i class="fa fa-envelope-o "></i>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
-                      <i class="fa fa-phone"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
-                      <i class="fa fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
-                      <i class="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-            <small>Gia nhập ngày: <span class="be-comment-time">
-                <i class="fa fa-clock-o"></i>
-                May 27, 2015 at 3:14am
-              </span></small>
-            <div class="edit-about-profile my-4">
-              <h3>Chỉnh sửa thông tin cá nhân</h3>
-              <form class="mb-4">
-
-                <div class="row">
-                  <div class="col-12 col-md-6">
-
-                    <!-- First name -->
-                    <div class="form-group">
-
-                      <!-- Label -->
-                      <label>
-                        Họ
-                      </label>
-
-                      <!-- Input -->
-                      <input type="text" class="form-control">
-
-                    </div>
-
-                  </div>
-                  <div class="col-12 col-md-6">
-
-                    <!-- Last name -->
-                    <div class="form-group">
-
-                      <!-- Label -->
-                      <label>
-                        Tên
-                      </label>
-
-                      <!-- Input -->
-                      <input type="text" class="form-control">
-
-                    </div>
-
-                  </div>
-                  <div class="col-12">
-
-
-
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <!-- Email address -->
-                    <div class="form-group">
-
-                      <!-- Label -->
-                      <label>
-                        Địa chỉ Email
-                      </label>
-
-                      <!-- Input -->
-                      <input type="email" class="form-control">
-
-                    </div>
-
-
-
-                  </div>
-                  <div class="col-12 col-md-6">
-
-                    <!-- Phone -->
-                    <div class="form-group">
-
-                      <!-- Label -->
-                      <label>
-                        Số điện thoại
-                      </label>
-
-                      <!-- Input -->
-                      <input type="text" class="form-control mb-3" placeholder="09.." data-mask="(000) 000-0000"
-                        autocomplete="off" maxlength="14">
-
-                    </div>
-
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label>Giới thiệu bản thân</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="form-group">
-                      <label>
-                        <i class="fa fa-facebook mr-2" aria-hidden="true"></i> Link facebook
-                      </label>
-                      <input type="text" class="form-control">
-                    </div>
-
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="form-group">
-                      <label>
-                        <i class="fa fa-instagram mr-2" aria-hidden="true"></i> Link Instagram
-                      </label>
-                      <input type="text" class="form-control">
-                    </div>
-
-                  </div>
-                </div> <!-- / .row -->
-
-
-                <!-- Divider -->
-                <hr class="mt-4 mb-5">
-
-                <div class="row">
-                  <div class="col-12 col-md-6 order-md-2">
-
-                    <!-- Card -->
-                    <div class="card bg-light border ml-md-4">
-                      <div class="card-body">
-
-                        <!-- Text -->
-                        <p class="mb-2">
-                          Password requirements
-                        </p>
-
-                        <!-- Text -->
-                        <p class="small text-muted mb-2">
-                          To create a new password, you have to meet all of the following requirements:
-                        </p>
-
-                        <!-- List group -->
-                        <ul class="small text-muted pl-4 mb-0">
-                          <li>
-                            Minimum 8 character
-                          </li>
-                          <li>
-                            At least one special character
-                          </li>
-                          <li>
-                            At least one number
-                          </li>
-                          <li>
-                            Can’t be the same as a previous password
-                          </li>
-                        </ul>
-
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-12 col-md-6">
-
-                    <!-- Password -->
-                    <div class="form-group">
-
-                      <!-- Label -->
-                      <label>
-                        Password
-                      </label>
-
-                      <!-- Input -->
-                      <input type="password" class="form-control">
-
-                    </div>
-
-                    <!-- New password -->
-                    <div class="form-group">
-
-                      <!-- Label -->
-                      <label>
-                        New password
-                      </label>
-
-                      <!-- Input -->
-                      <input type="password" class="form-control">
-
-                    </div>
-
-                    <!-- Confirm new password -->
-                    <div class="form-group">
-
-                      <!-- Label -->
-                      <label>
-                        Confirm new password
-                      </label>
-
-                      <!-- Input -->
-                      <input type="password" class="form-control">
-
-                    </div>
-
-                    <!-- Submit -->
-                    <button type="submit" class="btn btn-primary lift">
-                      Update password
-                    </button>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </form>
-
-            </div>
-
-          </div>
         </div>
-
-      </div>
 
 
     </section>
@@ -1323,46 +1413,6 @@
 
     <div class="clearfix"></div>
 
-
-    <section class="slice slice-lg">
-      <div class="pt-5 bg-darker">
-        <div class="container">
-          <div class="col-md-12">
-            <div class="card  shadow hover-shadow-lg border-0 position-relative zindex-100">
-              <div class="card-body py-5">
-                <div class="align-items-center">
-                  <div class="mb-4 text-center">
-                    <h2 class=" mt-4">Đăng ký nhận bản tin</h2>
-                    <div class="fluid-paragraph mt-3">
-                      <p class="lead lh-180">Start building fast, beautiful and modern looking websites in no time using
-                        our
-                        theme.</p>
-                    </div>
-                  </div>
-                  <div class="subscribe">
-                    <form class="form" role="form" action="#" method="post">
-                      <div class="row">
-                        <div class="col-sm-9 p1 mb-2">
-                          <div class="form-group">
-                            <label class="sr-only" for="subscribe-email">Email address</label>
-                            <input type="text" name="email" placeholder="Enter your email..."
-                              class="subscribe-email form-control" id="subscribe-email">
-                          </div>
-                        </div>
-                        <div class="col-sm-3 p1 mb-2">
-                          <button type="submit" class="btn btn-primary">Đăng kí</button>
-                        </div>
-                      </div>
-                    </form>
-                    <div class="success-message"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
     <footer id="footer-main">
@@ -1458,9 +1508,9 @@
         <div class="hotline-phone-ring-circle"></div>
         <div class="hotline-phone-ring-circle-fill"></div>
         <div class="hotline-phone-ring-img-circle">
-        <a href="add-post.html" class="pps-btn-img">
-          <i data-feather="plus-circle"></i>
-        </a>
+          <a href="add-post.html" class="pps-btn-img">
+            <i data-feather="plus-circle"></i>
+          </a>
         </div>
       </div>
     </div>
